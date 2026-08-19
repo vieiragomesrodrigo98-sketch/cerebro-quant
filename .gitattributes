@@ -1,0 +1,8 @@
+# Fim de linha DETERMINISTICO: o repositorio guarda LF, o disco recebe o do SO.
+# Sem isto o git avisa "LF will be replaced by CRLF" a cada `add` no Windows —
+# ruido que parece erro e nao e.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gz  binary
