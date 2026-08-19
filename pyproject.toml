@@ -26,6 +26,20 @@ pythonpath = ["src"]
 line-length = 100
 target-version = "py311"
 
+# Conjunto de regras DECLARADO, nunca herdado do default da versao instalada:
+# o default do ruff muda entre versoes, e um portao cuja regua muda sozinha
+# aprova hoje o que reprova amanha. Mesma regua do repositorio de origem.
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "B", "UP", "SIM", "RUF"]
+ignore = [
+    "E501",   # linha longa — gerenciada pelo formatter
+    "RUF001", # tipografia PT-BR deliberada em strings (—, ·, ×, →)
+    "RUF002", # idem em docstrings
+    "RUF003", # idem em comentarios
+    "UP042",  # (str, Enum) -> StrEnum muda str()/format(); enums sao persistidos
+    "N806",   # convencao do projeto: constantes locais de funcao em UPPER_CASE
+]
+
 [tool.mypy]
 python_version = "3.11"
 ignore_missing_imports = true
