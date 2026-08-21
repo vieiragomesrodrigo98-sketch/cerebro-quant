@@ -1,5 +1,7 @@
 # Cérebro — motor de descoberta de oportunidades
 
+[![CI](https://github.com/vieiragomesrodrigo98-sketch/cerebro-quant/actions/workflows/ci.yml/badge.svg)](https://github.com/vieiragomesrodrigo98-sketch/cerebro-quant/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+
 **Um sistema quantitativo construído para não acreditar em si mesmo.**
 *A quantitative engine built to distrust its own results.*
 
